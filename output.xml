@@ -1,0 +1,1653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.2 on win32)" generated="20220816 21:55:29.892" rpa="false" schemaversion="3">
+<suite id="s1" name="Footer Testcase" source="D:\thuctap\testcase_demo\testcases\footer_testcase.robot">
+<test id="s1-t1" name="Click the &quot;Sitemap&quot; option on the footer page." line="14">
+<kw name="open my browser" library="common_resources" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220816 21:55:30.152" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20220816 21:55:30.152" endtime="20220816 21:55:34.124"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220816 21:55:34.124" endtime="20220816 21:55:34.252"/>
+</kw>
+<status status="PASS" starttime="20220816 21:55:30.152" endtime="20220816 21:55:34.253"/>
+</kw>
+<kw name="click sitemap link button" library="footer_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${sitemap}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220816 21:55:34.254" level="INFO">Clicking element 'xpath://a[text() = 'Sitemap']'.</msg>
+<status status="PASS" starttime="20220816 21:55:34.253" endtime="20220816 21:55:35.737"/>
+</kw>
+<status status="PASS" starttime="20220816 21:55:34.253" endtime="20220816 21:55:35.737"/>
+</kw>
+<kw name="Verify successfully navigate to sitemap page" library="footer_resources">
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url_input}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220816 21:55:35.741" level="INFO">${url_input} = https://demo.nopcommerce.com/sitemap</msg>
+<status status="PASS" starttime="20220816 21:55:35.738" endtime="20220816 21:55:35.741"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>https://demo.nopcommerce.com/sitemap</arg>
+<arg>${url_input}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220816 21:55:35.741" endtime="20220816 21:55:35.742"/>
+</kw>
+<status status="PASS" starttime="20220816 21:55:35.737" endtime="20220816 21:55:35.742"/>
+</kw>
+<kw name="Close my browser" library="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220816 21:55:35.743" endtime="20220816 21:55:37.856"/>
+</kw>
+<status status="PASS" starttime="20220816 21:55:35.742" endtime="20220816 21:55:37.856"/>
+</kw>
+<status status="PASS" starttime="20220816 21:55:30.151" endtime="20220816 21:55:37.857"/>
+</test>
+<test id="s1-t2" name="Click the &quot;Shipping &amp; returns&quot; option on the footer page." line="19">
+<kw name="open my browser" library="common_resources" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220816 21:55:37.859" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20220816 21:55:37.859" endtime="20220816 21:55:42.384"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220816 21:55:42.384" endtime="20220816 21:55:42.504"/>
+</kw>
+<status status="PASS" starttime="20220816 21:55:37.858" endtime="20220816 21:55:42.504"/>
+</kw>
+<kw name="click shipping_return link button" library="footer_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${shipping_return}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220816 21:55:42.506" level="INFO">Clicking element 'xpath://a[text() = 'Shipping &amp; returns']'.</msg>
+<status status="PASS" starttime="20220816 21:55:42.505" endtime="20220816 21:55:43.035"/>
+</kw>
+<status status="PASS" starttime="20220816 21:55:42.505" endtime="20220816 21:55:43.035"/>
+</kw>
+<kw name="Verify successfully navigate to shipping_return page" library="footer_resources">
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url_input}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220816 21:55:43.039" level="INFO">${url_input} = https://demo.nopcommerce.com/shipping-returns</msg>
+<status status="PASS" starttime="20220816 21:55:43.036" endtime="20220816 21:55:43.039"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>https://demo.nopcommerce.com/shipping-returns</arg>
+<arg>${url_input}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220816 21:55:43.039" endtime="20220816 21:55:43.039"/>
+</kw>
+<status status="PASS" starttime="20220816 21:55:43.036" endtime="20220816 21:55:43.039"/>
+</kw>
+<kw name="Close my browser" library="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220816 21:55:43.040" endtime="20220816 21:55:45.155"/>
+</kw>
+<status status="PASS" starttime="20220816 21:55:43.039" endtime="20220816 21:55:45.155"/>
+</kw>
+<status status="PASS" starttime="20220816 21:55:37.858" endtime="20220816 21:55:45.156"/>
+</test>
+<test id="s1-t3" name="Click the &quot;Privacy notice&quot; option on the footer page." line="24">
+<kw name="open my browser" library="common_resources" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220816 21:55:45.159" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20220816 21:55:45.159" endtime="20220816 21:55:48.684"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220816 21:55:48.684" endtime="20220816 21:55:48.806"/>
+</kw>
+<status status="PASS" starttime="20220816 21:55:45.158" endtime="20220816 21:55:48.806"/>
+</kw>
+<kw name="click Privacy_notice link button" library="footer_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Privacy_notice}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220816 21:55:48.807" level="INFO">Clicking element 'xpath://a[text() = 'Privacy notice']'.</msg>
+<status status="PASS" starttime="20220816 21:55:48.807" endtime="20220816 21:55:49.972"/>
+</kw>
+<status status="PASS" starttime="20220816 21:55:48.806" endtime="20220816 21:55:49.972"/>
+</kw>
+<kw name="Verify successfully navigate to Privacy_notice page" library="footer_resources">
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url_input}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220816 21:55:49.980" level="INFO">${url_input} = https://demo.nopcommerce.com/privacy-notice</msg>
+<status status="PASS" starttime="20220816 21:55:49.973" endtime="20220816 21:55:49.980"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>https://demo.nopcommerce.com/privacy-notice</arg>
+<arg>${url_input}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220816 21:55:49.980" endtime="20220816 21:55:49.980"/>
+</kw>
+<status status="PASS" starttime="20220816 21:55:49.973" endtime="20220816 21:55:49.980"/>
+</kw>
+<kw name="Close my browser" library="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220816 21:55:49.981" endtime="20220816 21:55:52.101"/>
+</kw>
+<status status="PASS" starttime="20220816 21:55:49.981" endtime="20220816 21:55:52.101"/>
+</kw>
+<status status="PASS" starttime="20220816 21:55:45.157" endtime="20220816 21:55:52.102"/>
+</test>
+<test id="s1-t4" name="Click the &quot;Conditions of Use&quot; option on the footer page." line="28">
+<kw name="open my browser" library="common_resources" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220816 21:55:52.109" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20220816 21:55:52.108" endtime="20220816 21:55:54.691"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220816 21:55:54.691" endtime="20220816 21:55:54.818"/>
+</kw>
+<status status="PASS" starttime="20220816 21:55:52.107" endtime="20220816 21:55:54.818"/>
+</kw>
+<kw name="click Conditions_of_Use link button" library="footer_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Conditions_of_Use}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220816 21:55:54.820" level="INFO">Clicking element 'xpath://a[text() = 'Conditions of Use']'.</msg>
+<status status="PASS" starttime="20220816 21:55:54.820" endtime="20220816 21:55:55.416"/>
+</kw>
+<status status="PASS" starttime="20220816 21:55:54.819" endtime="20220816 21:55:55.416"/>
+</kw>
+<kw name="Verify successfully navigate to Conditions_of_Use page" library="footer_resources">
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url_input}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220816 21:55:55.423" level="INFO">${url_input} = https://demo.nopcommerce.com/conditions-of-use</msg>
+<status status="PASS" starttime="20220816 21:55:55.418" endtime="20220816 21:55:55.423"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>https://demo.nopcommerce.com/conditions-of-use</arg>
+<arg>${url_input}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220816 21:55:55.424" endtime="20220816 21:55:55.424"/>
+</kw>
+<status status="PASS" starttime="20220816 21:55:55.417" endtime="20220816 21:55:55.424"/>
+</kw>
+<kw name="Close my browser" library="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220816 21:55:55.425" endtime="20220816 21:55:57.534"/>
+</kw>
+<status status="PASS" starttime="20220816 21:55:55.425" endtime="20220816 21:55:57.535"/>
+</kw>
+<status status="PASS" starttime="20220816 21:55:52.105" endtime="20220816 21:55:57.536"/>
+</test>
+<test id="s1-t5" name="Click the &quot;About us&quot; option on the footer page." line="32">
+<kw name="open my browser" library="common_resources" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220816 21:55:57.539" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20220816 21:55:57.539" endtime="20220816 21:56:00.586"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220816 21:56:00.587" endtime="20220816 21:56:00.720"/>
+</kw>
+<status status="PASS" starttime="20220816 21:55:57.538" endtime="20220816 21:56:00.720"/>
+</kw>
+<kw name="click about_us link button" library="footer_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${about_us}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220816 21:56:00.723" level="INFO">Clicking element 'xpath://a[text() = 'About us']'.</msg>
+<status status="PASS" starttime="20220816 21:56:00.722" endtime="20220816 21:56:01.321"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:00.721" endtime="20220816 21:56:01.321"/>
+</kw>
+<kw name="Verify successfully navigate to about_us page" library="footer_resources">
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url_input}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220816 21:56:01.330" level="INFO">${url_input} = https://demo.nopcommerce.com/about-us</msg>
+<status status="PASS" starttime="20220816 21:56:01.322" endtime="20220816 21:56:01.330"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>https://demo.nopcommerce.com/about-us</arg>
+<arg>${url_input}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220816 21:56:01.330" endtime="20220816 21:56:01.330"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:01.322" endtime="20220816 21:56:01.331"/>
+</kw>
+<kw name="Close my browser" library="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220816 21:56:01.333" endtime="20220816 21:56:03.453"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:01.331" endtime="20220816 21:56:03.454"/>
+</kw>
+<status status="PASS" starttime="20220816 21:55:57.538" endtime="20220816 21:56:03.454"/>
+</test>
+<test id="s1-t6" name="Click the &quot;Contact us&quot; option on the footer page." line="36">
+<kw name="open my browser" library="common_resources" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220816 21:56:03.457" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20220816 21:56:03.456" endtime="20220816 21:56:06.399"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220816 21:56:06.400" endtime="20220816 21:56:06.522"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:03.456" endtime="20220816 21:56:06.523"/>
+</kw>
+<kw name="click Contact_us link button" library="footer_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Contact_us}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220816 21:56:06.527" level="INFO">Clicking element 'xpath://a[text() = 'Contact us']'.</msg>
+<status status="PASS" starttime="20220816 21:56:06.526" endtime="20220816 21:56:07.148"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:06.524" endtime="20220816 21:56:07.148"/>
+</kw>
+<kw name="Verify successfully navigate to Contact_us page" library="footer_resources">
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url_input}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220816 21:56:07.153" level="INFO">${url_input} = https://demo.nopcommerce.com/contactus</msg>
+<status status="PASS" starttime="20220816 21:56:07.149" endtime="20220816 21:56:07.153"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>https://demo.nopcommerce.com/contactus</arg>
+<arg>${url_input}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220816 21:56:07.153" endtime="20220816 21:56:07.153"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:07.149" endtime="20220816 21:56:07.153"/>
+</kw>
+<kw name="Close my browser" library="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220816 21:56:07.154" endtime="20220816 21:56:09.231"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:07.154" endtime="20220816 21:56:09.232"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:03.455" endtime="20220816 21:56:09.233"/>
+</test>
+<test id="s1-t7" name="Click the &quot;Search&quot; option on the footer page." line="40">
+<kw name="open my browser" library="common_resources" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220816 21:56:09.241" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20220816 21:56:09.240" endtime="20220816 21:56:11.391"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220816 21:56:11.391" endtime="20220816 21:56:11.520"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:09.239" endtime="20220816 21:56:11.521"/>
+</kw>
+<kw name="click search link button" library="footer_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${search}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220816 21:56:11.523" level="INFO">Clicking element 'xpath://a[text() = 'Search']'.</msg>
+<status status="PASS" starttime="20220816 21:56:11.522" endtime="20220816 21:56:13.811"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:11.521" endtime="20220816 21:56:13.811"/>
+</kw>
+<kw name="Verify successfully navigate to search page" library="footer_resources">
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url_input}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220816 21:56:13.816" level="INFO">${url_input} = https://demo.nopcommerce.com/search</msg>
+<status status="PASS" starttime="20220816 21:56:13.812" endtime="20220816 21:56:13.816"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>https://demo.nopcommerce.com/search</arg>
+<arg>${url_input}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220816 21:56:13.816" endtime="20220816 21:56:13.817"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:13.812" endtime="20220816 21:56:13.817"/>
+</kw>
+<kw name="Close my browser" library="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220816 21:56:13.817" endtime="20220816 21:56:15.940"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:13.817" endtime="20220816 21:56:15.940"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:09.237" endtime="20220816 21:56:15.941"/>
+</test>
+<test id="s1-t8" name="Click the &quot;News&quot; option on the footer page." line="44">
+<kw name="open my browser" library="common_resources" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220816 21:56:15.945" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20220816 21:56:15.945" endtime="20220816 21:56:19.994"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220816 21:56:19.994" endtime="20220816 21:56:20.125"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:15.944" endtime="20220816 21:56:20.125"/>
+</kw>
+<kw name="click News link button" library="footer_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${News}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220816 21:56:20.125" level="INFO">Clicking element 'xpath://a[text() = 'News']'.</msg>
+<status status="PASS" starttime="20220816 21:56:20.125" endtime="20220816 21:56:20.816"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:20.125" endtime="20220816 21:56:20.816"/>
+</kw>
+<kw name="Verify successfully navigate to News page" library="footer_resources">
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url_input}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220816 21:56:20.820" level="INFO">${url_input} = https://demo.nopcommerce.com/news</msg>
+<status status="PASS" starttime="20220816 21:56:20.816" endtime="20220816 21:56:20.821"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>https://demo.nopcommerce.com/news</arg>
+<arg>${url_input}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220816 21:56:20.821" endtime="20220816 21:56:20.821"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:20.816" endtime="20220816 21:56:20.821"/>
+</kw>
+<kw name="Close my browser" library="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220816 21:56:20.822" endtime="20220816 21:56:22.938"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:20.822" endtime="20220816 21:56:22.938"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:15.943" endtime="20220816 21:56:22.939"/>
+</test>
+<test id="s1-t9" name="Click the &quot;Blog&quot; option on the footer page." line="48">
+<kw name="open my browser" library="common_resources" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220816 21:56:22.942" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20220816 21:56:22.941" endtime="20220816 21:56:25.514"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220816 21:56:25.514" endtime="20220816 21:56:25.639"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:22.941" endtime="20220816 21:56:25.639"/>
+</kw>
+<kw name="click Blog link button" library="footer_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Blog}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220816 21:56:25.642" level="INFO">Clicking element 'xpath://a[text() = 'Blog']'.</msg>
+<status status="PASS" starttime="20220816 21:56:25.642" endtime="20220816 21:56:26.227"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:25.641" endtime="20220816 21:56:26.227"/>
+</kw>
+<kw name="Verify successfully navigate to Blog page" library="footer_resources">
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url_input}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220816 21:56:26.235" level="INFO">${url_input} = https://demo.nopcommerce.com/blog</msg>
+<status status="PASS" starttime="20220816 21:56:26.230" endtime="20220816 21:56:26.235"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>https://demo.nopcommerce.com/blog</arg>
+<arg>${url_input}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220816 21:56:26.235" endtime="20220816 21:56:26.235"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:26.228" endtime="20220816 21:56:26.235"/>
+</kw>
+<kw name="Close my browser" library="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220816 21:56:26.236" endtime="20220816 21:56:28.349"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:26.236" endtime="20220816 21:56:28.350"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:22.940" endtime="20220816 21:56:28.351"/>
+</test>
+<test id="s1-t10" name="Click the &quot;Recently viewed products&quot; option on the footer page." line="52">
+<kw name="open my browser" library="common_resources" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220816 21:56:28.359" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20220816 21:56:28.358" endtime="20220816 21:56:31.619"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220816 21:56:31.619" endtime="20220816 21:56:31.734"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:28.356" endtime="20220816 21:56:31.735"/>
+</kw>
+<kw name="click Recently_viewed_products link button" library="footer_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Recently_viewed_products}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220816 21:56:31.738" level="INFO">Clicking element 'xpath://a[text() = 'Recently viewed products']'.</msg>
+<status status="PASS" starttime="20220816 21:56:31.737" endtime="20220816 21:56:32.419"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:31.737" endtime="20220816 21:56:32.419"/>
+</kw>
+<kw name="Verify successfully navigate to Recently_viewed_products page" library="footer_resources">
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url_input}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220816 21:56:32.425" level="INFO">${url_input} = https://demo.nopcommerce.com/recentlyviewedproducts</msg>
+<status status="PASS" starttime="20220816 21:56:32.420" endtime="20220816 21:56:32.425"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>https://demo.nopcommerce.com/recentlyviewedproducts</arg>
+<arg>${url_input}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220816 21:56:32.425" endtime="20220816 21:56:32.425"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:32.420" endtime="20220816 21:56:32.425"/>
+</kw>
+<kw name="Close my browser" library="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220816 21:56:32.426" endtime="20220816 21:56:34.536"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:32.426" endtime="20220816 21:56:34.536"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:28.355" endtime="20220816 21:56:34.537"/>
+</test>
+<test id="s1-t11" name="Click the &quot;Compare products list&quot; option on the footer page." line="56">
+<kw name="open my browser" library="common_resources" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220816 21:56:34.539" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20220816 21:56:34.539" endtime="20220816 21:56:36.567"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220816 21:56:36.567" endtime="20220816 21:56:36.683"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:34.538" endtime="20220816 21:56:36.683"/>
+</kw>
+<kw name="click Compare_products_list link button" library="footer_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Compare_products_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220816 21:56:36.684" level="INFO">Clicking element 'xpath://a[text() = 'Compare products list']'.</msg>
+<status status="PASS" starttime="20220816 21:56:36.684" endtime="20220816 21:56:37.259"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:36.684" endtime="20220816 21:56:37.259"/>
+</kw>
+<kw name="Verify successfully navigate to Compare_products_list page" library="footer_resources">
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url_input}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220816 21:56:37.263" level="INFO">${url_input} = https://demo.nopcommerce.com/compareproducts</msg>
+<status status="PASS" starttime="20220816 21:56:37.260" endtime="20220816 21:56:37.263"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>https://demo.nopcommerce.com/compareproducts</arg>
+<arg>${url_input}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220816 21:56:37.263" endtime="20220816 21:56:37.263"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:37.260" endtime="20220816 21:56:37.263"/>
+</kw>
+<kw name="Close my browser" library="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220816 21:56:37.264" endtime="20220816 21:56:39.363"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:37.264" endtime="20220816 21:56:39.363"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:34.538" endtime="20220816 21:56:39.364"/>
+</test>
+<test id="s1-t12" name="Click the &quot;New products&quot; option on the footer page." line="60">
+<kw name="open my browser" library="common_resources" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220816 21:56:39.368" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20220816 21:56:39.368" endtime="20220816 21:56:41.378"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220816 21:56:41.378" endtime="20220816 21:56:41.508"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:39.368" endtime="20220816 21:56:41.509"/>
+</kw>
+<kw name="click New_products link button" library="footer_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${New_products}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220816 21:56:41.510" level="INFO">Clicking element 'xpath://a[text() = 'New products']'.</msg>
+<status status="PASS" starttime="20220816 21:56:41.510" endtime="20220816 21:56:42.165"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:41.509" endtime="20220816 21:56:42.165"/>
+</kw>
+<kw name="Verify successfully navigate to New_products page" library="footer_resources">
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url_input}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220816 21:56:42.173" level="INFO">${url_input} = https://demo.nopcommerce.com/newproducts</msg>
+<status status="PASS" starttime="20220816 21:56:42.166" endtime="20220816 21:56:42.173"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>https://demo.nopcommerce.com/newproducts</arg>
+<arg>${url_input}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220816 21:56:42.173" endtime="20220816 21:56:42.173"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:42.165" endtime="20220816 21:56:42.174"/>
+</kw>
+<kw name="Close my browser" library="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220816 21:56:42.174" endtime="20220816 21:56:44.265"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:42.174" endtime="20220816 21:56:44.265"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:39.367" endtime="20220816 21:56:44.266"/>
+</test>
+<test id="s1-t13" name="Click the &quot;New My account&quot; option on the footer page." line="64">
+<kw name="open my browser" library="common_resources" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220816 21:56:44.269" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20220816 21:56:44.268" endtime="20220816 21:56:46.576"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220816 21:56:46.576" endtime="20220816 21:56:46.710"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:44.268" endtime="20220816 21:56:46.710"/>
+</kw>
+<kw name="click my_account link button" library="footer_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${my_account}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220816 21:56:46.713" level="INFO">Clicking element 'xpath://a[text() = 'My account']'.</msg>
+<status status="PASS" starttime="20220816 21:56:46.712" endtime="20220816 21:56:47.789"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:46.711" endtime="20220816 21:56:47.789"/>
+</kw>
+<kw name="Verify customer navigate to login page if user hasn't logged in yet" library="footer_resources">
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url_input}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220816 21:56:47.795" level="INFO">${url_input} = https://demo.nopcommerce.com/login?ReturnUrl=%2Fcustomer%2Finfo</msg>
+<status status="PASS" starttime="20220816 21:56:47.791" endtime="20220816 21:56:47.795"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>https://demo.nopcommerce.com/login?ReturnUrl=%2Fcustomer%2Finfo</arg>
+<arg>${url_input}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220816 21:56:47.795" endtime="20220816 21:56:47.795"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:47.790" endtime="20220816 21:56:47.796"/>
+</kw>
+<kw name="Click register button" library="footer_resources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_register}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220816 21:56:47.796" level="INFO">Clicking button 'xpath://button[text() = 'Register']'.</msg>
+<status status="PASS" starttime="20220816 21:56:47.796" endtime="20220816 21:56:48.488"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:47.796" endtime="20220816 21:56:48.488"/>
+</kw>
+<kw name="Create account with VALID information" library="register_resource">
+<arg>M</arg>
+<arg>Huyen</arg>
+<arg>Diu</arg>
+<arg>15</arg>
+<arg>12</arg>
+<arg>2000</arg>
+<arg>huyendiu144@gmail.com</arg>
+<arg>123456</arg>
+<arg>123456</arg>
+<kw name="select gender" library="register_resource">
+<arg>${gender_input}</arg>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>${gender_name}</arg>
+<arg>${value_gender}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220816 21:56:48.489" level="INFO">Selecting 'M' from radio button 'Gender'.</msg>
+<status status="PASS" starttime="20220816 21:56:48.489" endtime="20220816 21:56:48.534"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:48.489" endtime="20220816 21:56:48.535"/>
+</kw>
+<kw name="Enter first name" library="register_resource">
+<arg>${first_name_input}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${first_name}</arg>
+<arg>${first_name_str}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220816 21:56:48.536" level="INFO">Typing text 'Huyen' into text field 'id:FirstName'.</msg>
+<status status="PASS" starttime="20220816 21:56:48.535" endtime="20220816 21:56:48.609"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:48.535" endtime="20220816 21:56:48.609"/>
+</kw>
+<kw name="Enter last name" library="register_resource">
+<arg>${last_name_input}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${last_name}</arg>
+<arg>${last_name_str}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220816 21:56:48.610" level="INFO">Typing text 'Diu' into text field 'id:LastName'.</msg>
+<status status="PASS" starttime="20220816 21:56:48.609" endtime="20220816 21:56:48.676"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:48.609" endtime="20220816 21:56:48.676"/>
+</kw>
+<kw name="Select date of birth" library="register_resource">
+<arg>${day_input}</arg>
+<arg>${month_input}</arg>
+<arg>${year_input}</arg>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${list_day}</arg>
+<arg>${day}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220816 21:56:48.677" level="INFO">Selecting options from selection list 'xpath://select[@name='DateOfBirthDay']' by value 15.</msg>
+<status status="PASS" starttime="20220816 21:56:48.677" endtime="20220816 21:56:48.729"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${list_month}</arg>
+<arg>${month}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220816 21:56:48.729" level="INFO">Selecting options from selection list 'xpath://select[@name='DateOfBirthMonth']' by value 12.</msg>
+<status status="PASS" starttime="20220816 21:56:48.729" endtime="20220816 21:56:48.776"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${list_year}</arg>
+<arg>${year}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220816 21:56:48.777" level="INFO">Selecting options from selection list 'xpath://select[@name='DateOfBirthYear']' by value 2000.</msg>
+<status status="PASS" starttime="20220816 21:56:48.776" endtime="20220816 21:56:48.826"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:48.676" endtime="20220816 21:56:48.827"/>
+</kw>
+<kw name="execute javascript">
+<arg>document.getElementById("Email").value = Math.round(Math.random()*100000)+"@gmail.com"</arg>
+<msg timestamp="20220816 21:56:48.827" level="FAIL">Multiple keywords with name 'execute javascript' found. Give the full name of the keyword you want to use:
+    Selenium2Library.Execute Javascript
+    SeleniumLibrary.Execute Javascript</msg>
+<status status="FAIL" starttime="20220816 21:56:48.827" endtime="20220816 21:56:48.827"/>
+</kw>
+<kw name="Enter password" library="register_resource">
+<arg>${password}</arg>
+<status status="NOT RUN" starttime="20220816 21:56:48.827" endtime="20220816 21:56:48.827"/>
+</kw>
+<kw name="Enter confirm password" library="register_resource">
+<arg>${confirm_password_input}</arg>
+<status status="NOT RUN" starttime="20220816 21:56:48.827" endtime="20220816 21:56:48.827"/>
+</kw>
+<kw name="Click the register button" library="register_resource">
+<status status="NOT RUN" starttime="20220816 21:56:48.827" endtime="20220816 21:56:48.827"/>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${locate}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="NOT RUN" starttime="20220816 21:56:48.828" endtime="20220816 21:56:48.828"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${locate}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220816 21:56:48.828" endtime="20220816 21:56:48.828"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath://div[text() = 'Your registration completed']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220816 21:56:48.828" endtime="20220816 21:56:48.828"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<var>${color}</var>
+<arg>return window.getComputedStyle(document.evaluate("//div[text() = 'Your registration completed']", document , null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue,null).getPropertyValue('color');</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20220816 21:56:48.828" endtime="20220816 21:56:48.828"/>
+</kw>
+<kw name="Transform RGB To HEX" library="lib">
+<var>${hex_color}</var>
+<arg>${color}</arg>
+<status status="NOT RUN" starttime="20220816 21:56:48.828" endtime="20220816 21:56:48.828"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${hex_color}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220816 21:56:48.828" endtime="20220816 21:56:48.828"/>
+</kw>
+<status status="FAIL" starttime="20220816 21:56:48.489" endtime="20220816 21:56:48.828"/>
+</kw>
+<kw name="click my_account link button" library="footer_resources">
+<status status="NOT RUN" starttime="20220816 21:56:48.829" endtime="20220816 21:56:48.829"/>
+</kw>
+<kw name="Verify navigate to my account page if user has logged" library="footer_resources">
+<status status="NOT RUN" starttime="20220816 21:56:48.830" endtime="20220816 21:56:48.830"/>
+</kw>
+<kw name="Close my browser" library="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220816 21:56:48.830" endtime="20220816 21:56:50.937"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:48.830" endtime="20220816 21:56:50.938"/>
+</kw>
+<status status="FAIL" starttime="20220816 21:56:44.267" endtime="20220816 21:56:50.938">Multiple keywords with name 'execute javascript' found. Give the full name of the keyword you want to use:
+    Selenium2Library.Execute Javascript
+    SeleniumLibrary.Execute Javascript</status>
+</test>
+<test id="s1-t14" name="Click the &quot;Orders&quot; option on the footer page." line="72">
+<kw name="open my browser" library="common_resources" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220816 21:56:50.941" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20220816 21:56:50.940" endtime="20220816 21:56:52.749"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220816 21:56:52.749" endtime="20220816 21:56:52.876"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:50.940" endtime="20220816 21:56:52.876"/>
+</kw>
+<kw name="click orders link button" library="footer_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${orders}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220816 21:56:52.877" level="INFO">Clicking element 'xpath://a[text() = 'Orders']'.</msg>
+<status status="PASS" starttime="20220816 21:56:52.877" endtime="20220816 21:56:53.703"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:52.876" endtime="20220816 21:56:53.703"/>
+</kw>
+<kw name="Verify history navigate to login page if user hasn't logged in yet" library="footer_resources">
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url_input}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220816 21:56:53.711" level="INFO">${url_input} = https://demo.nopcommerce.com/login?ReturnUrl=%2Forder%2Fhistory</msg>
+<status status="PASS" starttime="20220816 21:56:53.705" endtime="20220816 21:56:53.711"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>https://demo.nopcommerce.com/login?ReturnUrl=%2Forder%2Fhistory</arg>
+<arg>${url_input}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220816 21:56:53.711" endtime="20220816 21:56:53.712"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:53.704" endtime="20220816 21:56:53.712"/>
+</kw>
+<kw name="Click register button" library="footer_resources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_register}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220816 21:56:53.713" level="INFO">Clicking button 'xpath://button[text() = 'Register']'.</msg>
+<status status="PASS" starttime="20220816 21:56:53.712" endtime="20220816 21:56:54.242"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:53.712" endtime="20220816 21:56:54.242"/>
+</kw>
+<kw name="Create account with VALID information" library="register_resource">
+<arg>M</arg>
+<arg>Huyen</arg>
+<arg>Diu</arg>
+<arg>15</arg>
+<arg>12</arg>
+<arg>2000</arg>
+<arg>huyendiu133@gmail.com</arg>
+<arg>123456</arg>
+<arg>123456</arg>
+<kw name="select gender" library="register_resource">
+<arg>${gender_input}</arg>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>${gender_name}</arg>
+<arg>${value_gender}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220816 21:56:54.244" level="INFO">Selecting 'M' from radio button 'Gender'.</msg>
+<status status="PASS" starttime="20220816 21:56:54.244" endtime="20220816 21:56:54.299"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:54.244" endtime="20220816 21:56:54.299"/>
+</kw>
+<kw name="Enter first name" library="register_resource">
+<arg>${first_name_input}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${first_name}</arg>
+<arg>${first_name_str}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220816 21:56:54.300" level="INFO">Typing text 'Huyen' into text field 'id:FirstName'.</msg>
+<status status="PASS" starttime="20220816 21:56:54.300" endtime="20220816 21:56:54.371"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:54.299" endtime="20220816 21:56:54.371"/>
+</kw>
+<kw name="Enter last name" library="register_resource">
+<arg>${last_name_input}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${last_name}</arg>
+<arg>${last_name_str}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220816 21:56:54.372" level="INFO">Typing text 'Diu' into text field 'id:LastName'.</msg>
+<status status="PASS" starttime="20220816 21:56:54.372" endtime="20220816 21:56:54.440"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:54.371" endtime="20220816 21:56:54.440"/>
+</kw>
+<kw name="Select date of birth" library="register_resource">
+<arg>${day_input}</arg>
+<arg>${month_input}</arg>
+<arg>${year_input}</arg>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${list_day}</arg>
+<arg>${day}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220816 21:56:54.441" level="INFO">Selecting options from selection list 'xpath://select[@name='DateOfBirthDay']' by value 15.</msg>
+<status status="PASS" starttime="20220816 21:56:54.440" endtime="20220816 21:56:54.488"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${list_month}</arg>
+<arg>${month}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220816 21:56:54.489" level="INFO">Selecting options from selection list 'xpath://select[@name='DateOfBirthMonth']' by value 12.</msg>
+<status status="PASS" starttime="20220816 21:56:54.489" endtime="20220816 21:56:54.534"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${list_year}</arg>
+<arg>${year}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220816 21:56:54.534" level="INFO">Selecting options from selection list 'xpath://select[@name='DateOfBirthYear']' by value 2000.</msg>
+<status status="PASS" starttime="20220816 21:56:54.534" endtime="20220816 21:56:54.579"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:54.440" endtime="20220816 21:56:54.579"/>
+</kw>
+<kw name="execute javascript">
+<arg>document.getElementById("Email").value = Math.round(Math.random()*100000)+"@gmail.com"</arg>
+<msg timestamp="20220816 21:56:54.579" level="FAIL">Multiple keywords with name 'execute javascript' found. Give the full name of the keyword you want to use:
+    Selenium2Library.Execute Javascript
+    SeleniumLibrary.Execute Javascript</msg>
+<status status="FAIL" starttime="20220816 21:56:54.579" endtime="20220816 21:56:54.579"/>
+</kw>
+<kw name="Enter password" library="register_resource">
+<arg>${password}</arg>
+<status status="NOT RUN" starttime="20220816 21:56:54.581" endtime="20220816 21:56:54.581"/>
+</kw>
+<kw name="Enter confirm password" library="register_resource">
+<arg>${confirm_password_input}</arg>
+<status status="NOT RUN" starttime="20220816 21:56:54.581" endtime="20220816 21:56:54.581"/>
+</kw>
+<kw name="Click the register button" library="register_resource">
+<status status="NOT RUN" starttime="20220816 21:56:54.581" endtime="20220816 21:56:54.581"/>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${locate}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="NOT RUN" starttime="20220816 21:56:54.581" endtime="20220816 21:56:54.581"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${locate}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220816 21:56:54.581" endtime="20220816 21:56:54.581"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath://div[text() = 'Your registration completed']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220816 21:56:54.581" endtime="20220816 21:56:54.581"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<var>${color}</var>
+<arg>return window.getComputedStyle(document.evaluate("//div[text() = 'Your registration completed']", document , null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue,null).getPropertyValue('color');</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20220816 21:56:54.581" endtime="20220816 21:56:54.581"/>
+</kw>
+<kw name="Transform RGB To HEX" library="lib">
+<var>${hex_color}</var>
+<arg>${color}</arg>
+<status status="NOT RUN" starttime="20220816 21:56:54.581" endtime="20220816 21:56:54.581"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${hex_color}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220816 21:56:54.581" endtime="20220816 21:56:54.581"/>
+</kw>
+<status status="FAIL" starttime="20220816 21:56:54.243" endtime="20220816 21:56:54.582"/>
+</kw>
+<kw name="click orders link button" library="footer_resources">
+<status status="NOT RUN" starttime="20220816 21:56:54.582" endtime="20220816 21:56:54.582"/>
+</kw>
+<kw name="Verify successfully navigate to history page if user has logged" library="footer_resources">
+<status status="NOT RUN" starttime="20220816 21:56:54.582" endtime="20220816 21:56:54.582"/>
+</kw>
+<kw name="Close my browser" library="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220816 21:56:54.583" endtime="20220816 21:56:56.693"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:54.582" endtime="20220816 21:56:56.693"/>
+</kw>
+<status status="FAIL" starttime="20220816 21:56:50.940" endtime="20220816 21:56:56.695">Multiple keywords with name 'execute javascript' found. Give the full name of the keyword you want to use:
+    Selenium2Library.Execute Javascript
+    SeleniumLibrary.Execute Javascript</status>
+</test>
+<test id="s1-t15" name="Click the &quot;Addresses&quot; option on the footer page." line="80">
+<kw name="open my browser" library="common_resources" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220816 21:56:56.698" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20220816 21:56:56.698" endtime="20220816 21:56:58.669"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220816 21:56:58.670" endtime="20220816 21:56:58.792"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:56.698" endtime="20220816 21:56:58.792"/>
+</kw>
+<kw name="click Addresses link button" library="footer_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Addresses}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220816 21:56:58.793" level="INFO">Clicking element 'xpath://a[text() = 'Addresses']'.</msg>
+<status status="PASS" starttime="20220816 21:56:58.793" endtime="20220816 21:57:00.160"/>
+</kw>
+<status status="PASS" starttime="20220816 21:56:58.793" endtime="20220816 21:57:00.160"/>
+</kw>
+<kw name="Verify Addresses navigate to login page if user hasn't logged in yet" library="footer_resources">
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url_input}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220816 21:57:00.166" level="INFO">${url_input} = https://demo.nopcommerce.com/login?ReturnUrl=%2Fcustomer%2Faddresses</msg>
+<status status="PASS" starttime="20220816 21:57:00.161" endtime="20220816 21:57:00.166"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>https://demo.nopcommerce.com/login?ReturnUrl=%2Fcustomer%2Faddresses</arg>
+<arg>${url_input}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220816 21:57:00.167" endtime="20220816 21:57:00.167"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:00.161" endtime="20220816 21:57:00.168"/>
+</kw>
+<kw name="Click register button" library="footer_resources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_register}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220816 21:57:00.170" level="INFO">Clicking button 'xpath://button[text() = 'Register']'.</msg>
+<status status="PASS" starttime="20220816 21:57:00.169" endtime="20220816 21:57:00.780"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:00.169" endtime="20220816 21:57:00.780"/>
+</kw>
+<kw name="Create account with VALID information" library="register_resource">
+<arg>M</arg>
+<arg>Huyen</arg>
+<arg>Diu</arg>
+<arg>15</arg>
+<arg>12</arg>
+<arg>2000</arg>
+<arg>huyendiu122@gmail.com</arg>
+<arg>123456</arg>
+<arg>123456</arg>
+<kw name="select gender" library="register_resource">
+<arg>${gender_input}</arg>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>${gender_name}</arg>
+<arg>${value_gender}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220816 21:57:00.782" level="INFO">Selecting 'M' from radio button 'Gender'.</msg>
+<status status="PASS" starttime="20220816 21:57:00.782" endtime="20220816 21:57:00.834"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:00.781" endtime="20220816 21:57:00.834"/>
+</kw>
+<kw name="Enter first name" library="register_resource">
+<arg>${first_name_input}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${first_name}</arg>
+<arg>${first_name_str}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220816 21:57:00.835" level="INFO">Typing text 'Huyen' into text field 'id:FirstName'.</msg>
+<status status="PASS" starttime="20220816 21:57:00.835" endtime="20220816 21:57:00.907"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:00.835" endtime="20220816 21:57:00.907"/>
+</kw>
+<kw name="Enter last name" library="register_resource">
+<arg>${last_name_input}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${last_name}</arg>
+<arg>${last_name_str}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220816 21:57:00.908" level="INFO">Typing text 'Diu' into text field 'id:LastName'.</msg>
+<status status="PASS" starttime="20220816 21:57:00.907" endtime="20220816 21:57:00.973"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:00.907" endtime="20220816 21:57:00.973"/>
+</kw>
+<kw name="Select date of birth" library="register_resource">
+<arg>${day_input}</arg>
+<arg>${month_input}</arg>
+<arg>${year_input}</arg>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${list_day}</arg>
+<arg>${day}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220816 21:57:00.974" level="INFO">Selecting options from selection list 'xpath://select[@name='DateOfBirthDay']' by value 15.</msg>
+<status status="PASS" starttime="20220816 21:57:00.974" endtime="20220816 21:57:01.032"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${list_month}</arg>
+<arg>${month}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220816 21:57:01.033" level="INFO">Selecting options from selection list 'xpath://select[@name='DateOfBirthMonth']' by value 12.</msg>
+<status status="PASS" starttime="20220816 21:57:01.032" endtime="20220816 21:57:01.080"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${list_year}</arg>
+<arg>${year}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220816 21:57:01.081" level="INFO">Selecting options from selection list 'xpath://select[@name='DateOfBirthYear']' by value 2000.</msg>
+<status status="PASS" starttime="20220816 21:57:01.080" endtime="20220816 21:57:01.128"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:00.973" endtime="20220816 21:57:01.128"/>
+</kw>
+<kw name="execute javascript">
+<arg>document.getElementById("Email").value = Math.round(Math.random()*100000)+"@gmail.com"</arg>
+<msg timestamp="20220816 21:57:01.128" level="FAIL">Multiple keywords with name 'execute javascript' found. Give the full name of the keyword you want to use:
+    Selenium2Library.Execute Javascript
+    SeleniumLibrary.Execute Javascript</msg>
+<status status="FAIL" starttime="20220816 21:57:01.128" endtime="20220816 21:57:01.128"/>
+</kw>
+<kw name="Enter password" library="register_resource">
+<arg>${password}</arg>
+<status status="NOT RUN" starttime="20220816 21:57:01.129" endtime="20220816 21:57:01.129"/>
+</kw>
+<kw name="Enter confirm password" library="register_resource">
+<arg>${confirm_password_input}</arg>
+<status status="NOT RUN" starttime="20220816 21:57:01.129" endtime="20220816 21:57:01.129"/>
+</kw>
+<kw name="Click the register button" library="register_resource">
+<status status="NOT RUN" starttime="20220816 21:57:01.129" endtime="20220816 21:57:01.129"/>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${locate}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="NOT RUN" starttime="20220816 21:57:01.129" endtime="20220816 21:57:01.129"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${locate}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220816 21:57:01.129" endtime="20220816 21:57:01.129"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath://div[text() = 'Your registration completed']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220816 21:57:01.129" endtime="20220816 21:57:01.129"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<var>${color}</var>
+<arg>return window.getComputedStyle(document.evaluate("//div[text() = 'Your registration completed']", document , null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue,null).getPropertyValue('color');</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20220816 21:57:01.129" endtime="20220816 21:57:01.129"/>
+</kw>
+<kw name="Transform RGB To HEX" library="lib">
+<var>${hex_color}</var>
+<arg>${color}</arg>
+<status status="NOT RUN" starttime="20220816 21:57:01.129" endtime="20220816 21:57:01.130"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${hex_color}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220816 21:57:01.130" endtime="20220816 21:57:01.130"/>
+</kw>
+<status status="FAIL" starttime="20220816 21:57:00.781" endtime="20220816 21:57:01.130"/>
+</kw>
+<kw name="click Addresses link button" library="footer_resources">
+<status status="NOT RUN" starttime="20220816 21:57:01.130" endtime="20220816 21:57:01.130"/>
+</kw>
+<kw name="Verify successfully navigate to Addresses page if user has logged" library="footer_resources">
+<status status="NOT RUN" starttime="20220816 21:57:01.131" endtime="20220816 21:57:01.131"/>
+</kw>
+<kw name="Close my browser" library="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220816 21:57:01.132" endtime="20220816 21:57:03.238"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:01.131" endtime="20220816 21:57:03.239"/>
+</kw>
+<status status="FAIL" starttime="20220816 21:56:56.697" endtime="20220816 21:57:03.240">Multiple keywords with name 'execute javascript' found. Give the full name of the keyword you want to use:
+    Selenium2Library.Execute Javascript
+    SeleniumLibrary.Execute Javascript</status>
+</test>
+<test id="s1-t16" name="Click the &quot;Shopping cart&quot; option on the footer page." line="88">
+<kw name="open my browser" library="common_resources" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220816 21:57:03.247" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20220816 21:57:03.246" endtime="20220816 21:57:06.360"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220816 21:57:06.360" endtime="20220816 21:57:06.482"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:03.245" endtime="20220816 21:57:06.482"/>
+</kw>
+<kw name="click Shopping_cart link button" library="footer_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Shopping_cart}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220816 21:57:06.483" level="INFO">Clicking element 'xpath: //a[text() = 'Shopping cart']'.</msg>
+<status status="PASS" starttime="20220816 21:57:06.483" endtime="20220816 21:57:07.080"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:06.482" endtime="20220816 21:57:07.080"/>
+</kw>
+<kw name="Verify successfully navigate to shopping cart page" library="footer_resources">
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url_input}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220816 21:57:07.090" level="INFO">${url_input} = https://demo.nopcommerce.com/cart</msg>
+<status status="PASS" starttime="20220816 21:57:07.081" endtime="20220816 21:57:07.090"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>https://demo.nopcommerce.com/cart</arg>
+<arg>${url_input}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220816 21:57:07.090" endtime="20220816 21:57:07.091"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:07.081" endtime="20220816 21:57:07.091"/>
+</kw>
+<kw name="Close my browser" library="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220816 21:57:07.092" endtime="20220816 21:57:09.188"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:07.092" endtime="20220816 21:57:09.188"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:03.244" endtime="20220816 21:57:09.189"/>
+</test>
+<test id="s1-t17" name="Click the &quot;Wishlist&quot; option on the footer page." line="92">
+<kw name="open my browser" library="common_resources" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220816 21:57:09.197" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20220816 21:57:09.196" endtime="20220816 21:57:11.253"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220816 21:57:11.254" endtime="20220816 21:57:11.370"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:09.194" endtime="20220816 21:57:11.371"/>
+</kw>
+<kw name="click Wishlist link button" library="footer_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Wishlist}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220816 21:57:11.371" level="INFO">Clicking element 'xpath://a[text() = 'Wishlist']'.</msg>
+<status status="PASS" starttime="20220816 21:57:11.371" endtime="20220816 21:57:11.938"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:11.371" endtime="20220816 21:57:11.938"/>
+</kw>
+<kw name="Verify successfully navigate to wishlist page" library="footer_resources">
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url_input}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220816 21:57:11.943" level="INFO">${url_input} = https://demo.nopcommerce.com/wishlist</msg>
+<status status="PASS" starttime="20220816 21:57:11.938" endtime="20220816 21:57:11.943"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>https://demo.nopcommerce.com/wishlist</arg>
+<arg>${url_input}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220816 21:57:11.943" endtime="20220816 21:57:11.943"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:11.938" endtime="20220816 21:57:11.943"/>
+</kw>
+<kw name="Close my browser" library="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220816 21:57:11.944" endtime="20220816 21:57:14.043"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:11.943" endtime="20220816 21:57:14.043"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:09.193" endtime="20220816 21:57:14.043"/>
+</test>
+<test id="s1-t18" name="Click the &quot;Apply for vendor&quot; account on the footer page." line="96">
+<kw name="open my browser" library="common_resources" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220816 21:57:14.046" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20220816 21:57:14.046" endtime="20220816 21:57:17.305"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220816 21:57:17.305" endtime="20220816 21:57:17.428"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:14.045" endtime="20220816 21:57:17.428"/>
+</kw>
+<kw name="click Apply_for_vendor_account link button" library="footer_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Apply_for_vendor_account}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220816 21:57:17.429" level="INFO">Clicking element 'xpath://a[text() = 'Apply for vendor account']'.</msg>
+<status status="PASS" starttime="20220816 21:57:17.429" endtime="20220816 21:57:18.341"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:17.429" endtime="20220816 21:57:18.341"/>
+</kw>
+<kw name="Verify Apply_for_vendor_account navigate to login page if user hasn't logged in yet" library="footer_resources">
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url_input}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220816 21:57:18.349" level="INFO">${url_input} = https://demo.nopcommerce.com/login?ReturnUrl=%2Fvendor%2Fapply</msg>
+<status status="PASS" starttime="20220816 21:57:18.343" endtime="20220816 21:57:18.349"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>https://demo.nopcommerce.com/login?ReturnUrl=%2Fvendor%2Fapply</arg>
+<arg>${url_input}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220816 21:57:18.350" endtime="20220816 21:57:18.351"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:18.342" endtime="20220816 21:57:18.352"/>
+</kw>
+<kw name="Click register button" library="footer_resources">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${btn_register}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220816 21:57:18.354" level="INFO">Clicking button 'xpath://button[text() = 'Register']'.</msg>
+<status status="PASS" starttime="20220816 21:57:18.353" endtime="20220816 21:57:18.888"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:18.353" endtime="20220816 21:57:18.888"/>
+</kw>
+<kw name="Create account with VALID information" library="register_resource">
+<arg>M</arg>
+<arg>Huyen</arg>
+<arg>Diu</arg>
+<arg>15</arg>
+<arg>12</arg>
+<arg>2000</arg>
+<arg>huyendiu111@gmail.com</arg>
+<arg>123456</arg>
+<arg>123456</arg>
+<kw name="select gender" library="register_resource">
+<arg>${gender_input}</arg>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>${gender_name}</arg>
+<arg>${value_gender}</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20220816 21:57:18.891" level="INFO">Selecting 'M' from radio button 'Gender'.</msg>
+<status status="PASS" starttime="20220816 21:57:18.890" endtime="20220816 21:57:18.942"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:18.889" endtime="20220816 21:57:18.942"/>
+</kw>
+<kw name="Enter first name" library="register_resource">
+<arg>${first_name_input}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${first_name}</arg>
+<arg>${first_name_str}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220816 21:57:18.943" level="INFO">Typing text 'Huyen' into text field 'id:FirstName'.</msg>
+<status status="PASS" starttime="20220816 21:57:18.943" endtime="20220816 21:57:19.017"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:18.942" endtime="20220816 21:57:19.017"/>
+</kw>
+<kw name="Enter last name" library="register_resource">
+<arg>${last_name_input}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${last_name}</arg>
+<arg>${last_name_str}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220816 21:57:19.018" level="INFO">Typing text 'Diu' into text field 'id:LastName'.</msg>
+<status status="PASS" starttime="20220816 21:57:19.018" endtime="20220816 21:57:19.086"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:19.017" endtime="20220816 21:57:19.086"/>
+</kw>
+<kw name="Select date of birth" library="register_resource">
+<arg>${day_input}</arg>
+<arg>${month_input}</arg>
+<arg>${year_input}</arg>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${list_day}</arg>
+<arg>${day}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220816 21:57:19.087" level="INFO">Selecting options from selection list 'xpath://select[@name='DateOfBirthDay']' by value 15.</msg>
+<status status="PASS" starttime="20220816 21:57:19.087" endtime="20220816 21:57:19.145"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${list_month}</arg>
+<arg>${month}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220816 21:57:19.146" level="INFO">Selecting options from selection list 'xpath://select[@name='DateOfBirthMonth']' by value 12.</msg>
+<status status="PASS" starttime="20220816 21:57:19.145" endtime="20220816 21:57:19.196"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>${list_year}</arg>
+<arg>${year}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20220816 21:57:19.196" level="INFO">Selecting options from selection list 'xpath://select[@name='DateOfBirthYear']' by value 2000.</msg>
+<status status="PASS" starttime="20220816 21:57:19.196" endtime="20220816 21:57:19.242"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:19.086" endtime="20220816 21:57:19.242"/>
+</kw>
+<kw name="execute javascript">
+<arg>document.getElementById("Email").value = Math.round(Math.random()*100000)+"@gmail.com"</arg>
+<msg timestamp="20220816 21:57:19.242" level="FAIL">Multiple keywords with name 'execute javascript' found. Give the full name of the keyword you want to use:
+    Selenium2Library.Execute Javascript
+    SeleniumLibrary.Execute Javascript</msg>
+<status status="FAIL" starttime="20220816 21:57:19.242" endtime="20220816 21:57:19.242"/>
+</kw>
+<kw name="Enter password" library="register_resource">
+<arg>${password}</arg>
+<status status="NOT RUN" starttime="20220816 21:57:19.243" endtime="20220816 21:57:19.243"/>
+</kw>
+<kw name="Enter confirm password" library="register_resource">
+<arg>${confirm_password_input}</arg>
+<status status="NOT RUN" starttime="20220816 21:57:19.243" endtime="20220816 21:57:19.243"/>
+</kw>
+<kw name="Click the register button" library="register_resource">
+<status status="NOT RUN" starttime="20220816 21:57:19.243" endtime="20220816 21:57:19.243"/>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${locate}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="NOT RUN" starttime="20220816 21:57:19.244" endtime="20220816 21:57:19.244"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${locate}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220816 21:57:19.244" endtime="20220816 21:57:19.244"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>xpath://div[text() = 'Your registration completed']</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20220816 21:57:19.244" endtime="20220816 21:57:19.244"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<var>${color}</var>
+<arg>return window.getComputedStyle(document.evaluate("//div[text() = 'Your registration completed']", document , null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue,null).getPropertyValue('color');</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20220816 21:57:19.244" endtime="20220816 21:57:19.244"/>
+</kw>
+<kw name="Transform RGB To HEX" library="lib">
+<var>${hex_color}</var>
+<arg>${color}</arg>
+<status status="NOT RUN" starttime="20220816 21:57:19.245" endtime="20220816 21:57:19.245"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${hex_color}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220816 21:57:19.245" endtime="20220816 21:57:19.245"/>
+</kw>
+<status status="FAIL" starttime="20220816 21:57:18.889" endtime="20220816 21:57:19.246"/>
+</kw>
+<kw name="click Apply_for_vendor_account link button" library="footer_resources">
+<status status="NOT RUN" starttime="20220816 21:57:19.247" endtime="20220816 21:57:19.247"/>
+</kw>
+<kw name="Verify successfully navigate to Apply_for_vendor_account page if user has logged" library="footer_resources">
+<status status="NOT RUN" starttime="20220816 21:57:19.247" endtime="20220816 21:57:19.247"/>
+</kw>
+<kw name="Close my browser" library="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220816 21:57:19.248" endtime="20220816 21:57:21.384"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:19.248" endtime="20220816 21:57:21.384"/>
+</kw>
+<status status="FAIL" starttime="20220816 21:57:14.045" endtime="20220816 21:57:21.385">Multiple keywords with name 'execute javascript' found. Give the full name of the keyword you want to use:
+    Selenium2Library.Execute Javascript
+    SeleniumLibrary.Execute Javascript</status>
+</test>
+<test id="s1-t19" name="Click the facebook icon on the footer page." line="104">
+<kw name="open my browser" library="common_resources" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220816 21:57:21.387" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20220816 21:57:21.387" endtime="20220816 21:57:23.510"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220816 21:57:23.510" endtime="20220816 21:57:23.638"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:21.387" endtime="20220816 21:57:23.638"/>
+</kw>
+<kw name="click facebook link button" library="footer_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${facebook}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220816 21:57:23.639" level="INFO">Clicking element 'xpath://a[text() = 'Facebook']'.</msg>
+<status status="PASS" starttime="20220816 21:57:23.638" endtime="20220816 21:57:23.701"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:23.638" endtime="20220816 21:57:23.702"/>
+</kw>
+<kw name="Verify successfully navigate facebook page" library="footer_resources">
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${handles}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20220816 21:57:23.708" level="INFO">${handles} = ['CDwindow-2E6DB87BCD445BA5515245A5C9438285', 'CDwindow-1845BC7910DA3B126DADF8E5DC7AA71C']</msg>
+<status status="PASS" starttime="20220816 21:57:23.704" endtime="20220816 21:57:23.708"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220816 21:57:23.708" endtime="20220816 21:57:23.762"/>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url_input}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220816 21:57:26.490" level="INFO">${url_input} = https://www.facebook.com/nopCommerce</msg>
+<status status="PASS" starttime="20220816 21:57:23.762" endtime="20220816 21:57:26.490"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>https://www.facebook.com/nopCommerce</arg>
+<arg>${url_input}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220816 21:57:26.490" endtime="20220816 21:57:26.491"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:23.704" endtime="20220816 21:57:26.491"/>
+</kw>
+<kw name="Close my browser" library="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220816 21:57:26.492" endtime="20220816 21:57:28.626"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:26.492" endtime="20220816 21:57:28.626"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:21.386" endtime="20220816 21:57:28.627"/>
+</test>
+<test id="s1-t20" name="Click the twitter icon on the footer page." line="108">
+<kw name="open my browser" library="common_resources" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220816 21:57:28.635" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20220816 21:57:28.634" endtime="20220816 21:57:30.707"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220816 21:57:30.708" endtime="20220816 21:57:30.842"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:28.632" endtime="20220816 21:57:30.843"/>
+</kw>
+<kw name="click Twitter link button" library="footer_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Twitter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220816 21:57:30.845" level="INFO">Clicking element 'xpath://a[text() = 'Twitter']'.</msg>
+<status status="PASS" starttime="20220816 21:57:30.844" endtime="20220816 21:57:30.940"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:30.843" endtime="20220816 21:57:30.941"/>
+</kw>
+<kw name="Verify successfully navigate Twitter page" library="footer_resources">
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${handles}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20220816 21:57:30.949" level="INFO">${handles} = ['CDwindow-1B5A4E8B41639612589BECD67E6A77D6', 'CDwindow-F09AAA2618BC49CC91C38846F8BA8289']</msg>
+<status status="PASS" starttime="20220816 21:57:30.944" endtime="20220816 21:57:30.950"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220816 21:57:30.951" endtime="20220816 21:57:31.029"/>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url_input}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220816 21:57:32.636" level="INFO">${url_input} = https://twitter.com/nopCommerce</msg>
+<status status="PASS" starttime="20220816 21:57:31.030" endtime="20220816 21:57:32.636"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>https://twitter.com/nopCommerce</arg>
+<arg>${url_input}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220816 21:57:32.636" endtime="20220816 21:57:32.636"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:30.941" endtime="20220816 21:57:32.636"/>
+</kw>
+<kw name="Close my browser" library="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220816 21:57:32.637" endtime="20220816 21:57:34.736"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:32.637" endtime="20220816 21:57:34.736"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:28.631" endtime="20220816 21:57:34.737"/>
+</test>
+<test id="s1-t21" name="Click the youtube icon on the footer page." line="112">
+<kw name="open my browser" library="common_resources" type="SETUP">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220816 21:57:34.744" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com'.</msg>
+<status status="PASS" starttime="20220816 21:57:34.743" endtime="20220816 21:57:38.308"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220816 21:57:38.308" endtime="20220816 21:57:38.436"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:34.742" endtime="20220816 21:57:38.436"/>
+</kw>
+<kw name="click YouTube link button" library="footer_resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${YouTube}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220816 21:57:38.437" level="INFO">Clicking element 'xpath://a[text() = 'YouTube']'.</msg>
+<status status="PASS" starttime="20220816 21:57:38.437" endtime="20220816 21:57:38.504"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:38.437" endtime="20220816 21:57:38.505"/>
+</kw>
+<kw name="Verify successfully navigate YouTube page" library="footer_resources">
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${handles}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20220816 21:57:38.508" level="INFO">${handles} = ['CDwindow-EE85F440EBCCCA31DE648EAE00C6FDA5', 'CDwindow-E013C8AC4953602F0B39F3FDD9478EB4']</msg>
+<status status="PASS" starttime="20220816 21:57:38.506" endtime="20220816 21:57:38.508"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20220816 21:57:38.508" endtime="20220816 21:57:38.570"/>
+</kw>
+<kw name="Get Location" library="SeleniumLibrary">
+<var>${url_input}</var>
+<doc>Returns the current browser window URL.</doc>
+<msg timestamp="20220816 21:57:50.094" level="INFO">${url_input} = https://www.youtube.com/user/nopCommerce</msg>
+<status status="PASS" starttime="20220816 21:57:38.571" endtime="20220816 21:57:50.094"/>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<arg>https://www.youtube.com/user/nopCommerce</arg>
+<arg>${url_input}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" starttime="20220816 21:57:50.094" endtime="20220816 21:57:50.094"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:38.505" endtime="20220816 21:57:50.095"/>
+</kw>
+<kw name="Close my browser" library="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20220816 21:57:50.096" endtime="20220816 21:57:52.257"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:50.095" endtime="20220816 21:57:52.257"/>
+</kw>
+<status status="PASS" starttime="20220816 21:57:34.740" endtime="20220816 21:57:52.257"/>
+</test>
+<status status="FAIL" starttime="20220816 21:55:29.894" endtime="20220816 21:57:52.259"/>
+</suite>
+<statistics>
+<total>
+<stat pass="17" fail="4" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="17" fail="4" skip="0" id="s1" name="Footer Testcase">Footer Testcase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

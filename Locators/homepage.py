@@ -1,0 +1,18 @@
+news = "xpath://strong[text() = 'News']"
+wishlist_M8_HTC_5L = "xpath://a [text() = 'HTC One M8 Android L 5.0 Lollipop']/parent::h2/following-sibling::div[@class = 'add-info']/div[@class = 'buttons']/button[text() = 'Add to wishlist']"
+
+wishlist_mabook_home ="xpath://a[contains(text(), 'MacBook')]/ancestor::div[1]//div[@class = 'buttons']/button[contains(text() , 'wishlist')]"
+wishlist_build_home = "xpath://a[contains(text(), 'Build your own computer')]/ancestor::div[1]//div[@class = 'buttons']/button[contains(text() , 'wishlist')]"
+
+compare_M8_HTC_5L = "xpath://a [text() = 'HTC One M8 Android L 5.0 Lollipop']/parent::h2/following-sibling::div[@class = 'add-info']/div[@class = 'buttons']/button[text() = 'Add to compare list']"
+product_comparison_link = "xpath://a [text() = 'product comparison']"
+documentation = "xpath://a [text() = 'Documentation']"
+forums = "xpath://a [text() = 'Forums']"
+nopCommerce = "xpath://a [text() = 'nopCommerce.com']"
+electronics_cat = "xpath://a [text() = ' Electronics ']"
+apparel_cat = "xpath://a [text() = ' Apparel ']"
+digital_download_cat = "xpath://a [text() = ' Digital downloads ']"
+title_M8_HTC_5L = "xpath://a [text() = 'HTC One M8 Android L 5.0 Lollipop']"
+detail_new_release= "xpath://a [text() = 'nopCommerce new release!']/parent::div/following-sibling::div[@class = 'buttons']/a"
+view_news_archive = "xpath://a [text() = 'View News Archive']"
+btn_vote = "xpath://button[text() = 'Vote']"
