@@ -35,6 +35,7 @@ Verify total change
     should be equal    ${float_price}    ${float_price_divide}
 
 Verify wishlist page empty
+    sleep    2
     element should be visible    ${data_empty}
 
 Verify message error

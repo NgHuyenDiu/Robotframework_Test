@@ -29,6 +29,9 @@ Click the logout link
 Click the log in link
     click element    ${login_linkbutton}
 
+Verify the log in link visible
+    page should contain element    ${login_linkbutton}
+
 Click register link
     click element   ${register_linkbutton}
 

@@ -24,7 +24,7 @@ Verify that an error message displays when the user leaves the required field BL
 
 Verify that successful register account.
     [Tags]    REGISTER-002
-    Create account with VALID information   M   Nguyen  Diu     12      10      2000    abc123@gmail.com       123456      123456
+    Create account with VALID information email ramdom   M   Nguyen  Diu     12      10      2000
 
 Verify that the user cannot create an account with the field email INVALID.
     [Tags]    REGISTER-004
@@ -42,12 +42,9 @@ Verify that the user cannot create an account with an INVALID Date of birth.
     [Tags]    REGISTER-007
     Create account with the birthday INVALID    nguyen     diu    31    2   2000     123456     123456
 
-Verify that the user cannot create an account with the Company name for too long.
-    [Tags]    REGISTER-008
-    Create account with the computer name too long    nguyen     diu    rkTZ6dCngZOm26GsywyulMZa7gEwXnD23wGIQUHDUOoqJ76UxfiSfHrFzRdZrTwS93eoTOz2Zc8IkBgrleevMRJpa2mZ9k4nHjePcNZRTJP9uiFyXFxkzhV1dWETT6zTe1kkWNaEx6xDMrzPAq1rP7h4qrzQvHaEe50ML572ftYHZgVVxhjaQmCyTefatunNZERU3PTS     123456     123456
-
 Verify that the user cannot create an account with the Company name INVALID.
-    [Tags]    REGISTER-009
+    [Tags]    REGISTER-008
+#    Create account with the computer name too long    nguyen     diu    rkTZ6dCngZOm26GsywyulMZa7gEwXnD23wGIQUHDUOoqJ76UxfiSfHrFzRdZrTwS93eoTOz2Zc8IkBgrleevMRJpa2mZ9k4nHjePcNZRTJP9uiFyXFxkzhV1dWETT6zTe1kkWNaEx6xDMrzPAq1rP7h4qrzQvHaEe50ML572ftYHZgVVxhjaQmCyTefatunNZERU3PTS     123456     123456
     #Create account with the company name INVALID    nguyen     diu   https://www.diffchecker.com/image-diff/    123456     123456
     #Create account with the company name INVALID    nguyen     diu   1234567    123456     123456
     Create account with the company name INVALID    nguyen     diu   @#$%^%^%^^    123456     123456

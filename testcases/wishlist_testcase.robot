@@ -117,6 +117,7 @@ Changes the "Qty." less than 0 of product has minimum quantity equal to 1.
     wishlist_resource.Verify message error
     wishlist_resource.Verify quantity default     1
     sleep    5
+
 Changes the "Qty." less than 0 of product has minimum quantity equal to 2 .
     [Tags]    WISHLIST-007
     Scroll to news element

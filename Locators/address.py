@@ -11,5 +11,6 @@ Address_ZipPostalCode = "id:Address_ZipPostalCode"
 Address_PhoneNumber = "id:Address_PhoneNumber"
 btn_save = "xpath://button[text() ='Save']"
 lbl_wait = "id:states-loading-progress"
-
+error_message = "//span[contains(@id, 'error')]"
+error_select = "//span[contains(@class, 'error')]"
 

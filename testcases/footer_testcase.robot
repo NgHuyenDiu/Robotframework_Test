@@ -79,7 +79,7 @@ Click the "New My account" option on the footer page.
     click my_account link button
     Verify customer navigate to login page if user hasn't logged in yet
     Click register button
-    register_resource.Create account with VALID information     M    Huyen      Diu     15      12      2000        huyendiu144@gmail.com      123456      123456
+    register_resource.Create account with VALID information email ramdom     M    Huyen      Diu     15      12      2000
     click my_account link button
     Verify navigate to my account page if user has logged
 
@@ -88,7 +88,7 @@ Click the "Orders" option on the footer page.
     click orders link button
     Verify history navigate to login page if user hasn't logged in yet
     Click register button
-    register_resource.Create account with VALID information     M    Huyen      Diu     15      12      2000        huyendiu133@gmail.com      123456      123456
+    register_resource.Create account with VALID information email ramdom     M    Huyen      Diu     15      12      2000
     click orders link button
     Verify successfully navigate to history page if user has logged
 
@@ -97,7 +97,7 @@ Click the "Addresses" option on the footer page.
     click Addresses link button
     Verify Addresses navigate to login page if user hasn't logged in yet
     Click register button
-    register_resource.Create account with VALID information     M    Huyen      Diu     15      12      2000        huyendiu122@gmail.com      123456      123456
+    register_resource.Create account with VALID information email ramdom     M    Huyen      Diu     15      12      2000
     click Addresses link button
     Verify successfully navigate to Addresses page if user has logged
 
@@ -116,7 +116,7 @@ Click the "Apply for vendor" account on the footer page.
     click Apply_for_vendor_account link button
     Verify Apply_for_vendor_account navigate to login page if user hasn't logged in yet
     Click register button
-    register_resource.Create account with VALID information     M    Huyen      Diu     15      12      2000        huyendiu111@gmail.com      123456      123456
+    register_resource.Create account with VALID information email ramdom     M    Huyen      Diu     15      12      2000
     click Apply_for_vendor_account link button
     Verify successfully navigate to Apply_for_vendor_account page if user has logged
 

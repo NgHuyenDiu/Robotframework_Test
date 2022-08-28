@@ -1,10 +1,12 @@
 *** Settings ***
 Library    SeleniumLibrary
+Library    Collections
 Resource    ../Resourses/cart_resource.robot
 Resource    ../Resourses/common_resources.robot
 Resource    ../Resourses/header_resources.robot
 Resource    ../Resourses/bar_notify_resources.robot
 Resource    ../Resourses/detail_product_resource.robot
+Resource    ../Resourses/register_resource.robot
 Test Setup       open my browser     ${url}   ${browser}
 Test Teardown    close my browser
 
@@ -148,7 +150,14 @@ Verify check out the shopping cart in case the user is not logged in to the site
 
 Verify check out the shopping cart in case the user is logged in to the site.
     [Tags]    CART-010
-    Login with a VALID account      abc12@gmail.com       123456
+    Click register link
+    ${login}  Create account with VALID information email ramdom    M    Huyen      Diu     15      12      2000
+
+    go to   https://demo.nopcommerce.com/login
+    ${email_in}    get from list    ${login}   0
+    ${password_in}      get from list    ${login}   1
+    Login with a VALID account      ${email_in}       ${password_in}
+
     Move to element
     Add to cart element HTC One M8 Android L 5.0 Lollipop
     Verify message success
@@ -163,7 +172,7 @@ Verify check out the shopping cart in case the user is logged in to the site.
     sleep    5
 
 Clicking on the "Continue shopping" button.
-    [Tags]    CHECKLIST-CART-001
+    [Tags]    CHECKLIST-CART-011
     Move to element
     Add to cart element HTC One M8 Android L 5.0 Lollipop
     Verify message success
@@ -177,7 +186,7 @@ Clicking on the "Continue shopping" button.
     sleep    5
 
 Clicking on the"Estimate shipping"
-    [Tags]    CHECKLIST-CART-002
+    [Tags]    CHECKLIST-CART-012
     Move to element
     Add to cart element HTC One M8 Android L 5.0 Lollipop
     Verify message success
@@ -191,7 +200,7 @@ Clicking on the"Estimate shipping"
     sleep    5
 
 Verify that cart update succeeds when user adds 1 product more than once.
-    [Tags]    CART-011
+    [Tags]    CART-013
 
     Move to element
     Add to cart element HTC One M8 Android L 5.0 Lollipop

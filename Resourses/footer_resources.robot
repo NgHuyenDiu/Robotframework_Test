@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Library    Selenium2Library
+#Library    Selenium2Library
 Variables    ../Locators/footer.py
 Variables    ../Locators/login.py
 *** Keywords ***

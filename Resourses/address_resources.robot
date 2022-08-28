@@ -61,3 +61,13 @@ create address
     Enter Address_PhoneNumber    ${Address_PhoneNumber_input}
     Click btn save
 
+Display input error message
+    ${list_mess}   get text    ${error_message}
+    log to console    ${list_mess}
+
+Display select error message
+    ${list_mess}   get text    ${error_select}
+    log to console    ${list_mess}
+
+Verify error message display
+    page should contain    ${error_message}

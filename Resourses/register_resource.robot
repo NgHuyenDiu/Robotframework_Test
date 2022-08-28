@@ -1,6 +1,7 @@
 *** Settings ***
 Library    SeleniumLibrary
 Library    ../mylib/lib.py
+Library    String
 Variables    ../Locators/register.py
 
 *** Variables ***
@@ -91,14 +92,35 @@ Create account with all fields blank
     Click the register button
     Verify error message
 
-Create account with VALID information
-    [Arguments]   ${gender_input}    ${first_name_input}  ${last_name_input}  ${day_input}    ${month_input}  ${year_input}   ${email_input}    ${password}   ${confirm_password_input}
+Create account with VALID information email ramdom
+    [Arguments]   ${gender_input}    ${first_name_input}  ${last_name_input}  ${day_input}    ${month_input}  ${year_input}
     select gender   ${gender_input}
     Enter first name    ${first_name_input}
     Enter last name      ${last_name_input}
     Select date of birth    ${day_input}    ${month_input}      ${year_input}
+
     execute javascript    document.getElementById("Email").value = Math.round(Math.random()*100000)+"@gmail.com"
-#    Enter email     ${email_input}
+    ${email_out}    get value    ${email}
+    ${pass_ramdom}  Generate Random String  6
+    register_resource.Enter password      ${pass_ramdom}
+    register_resource.Enter confirm password      ${pass_ramdom}
+    Click the register button
+    ${locate}       SeleniumLibrary.get location
+    log to console    ${locate}
+    SeleniumLibrary.element should be visible    xpath://div[text() = 'Your registration completed']
+    ${color}    SeleniumLibrary.Execute Javascript   return window.getComputedStyle(document.evaluate("//div[text() = 'Your registration completed']", document , null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue,null).getPropertyValue('color');
+    ${hex_color}   transform RGB to HEX    ${color}
+    log to console     ${hex_color}
+    ${login}    create list    ${email_out}     ${pass_ramdom}
+    [Return]    ${login}
+
+Create account with VALID information
+    [Arguments]   ${gender_input}    ${first_name_input}  ${last_name_input}  ${day_input}    ${month_input}  ${year_input}  ${email_input}  ${password}   ${confirm_password_input}
+    select gender   ${gender_input}
+    Enter first name    ${first_name_input}
+    Enter last name      ${last_name_input}
+    Select date of birth    ${day_input}    ${month_input}      ${year_input}
+    Enter email     ${email_input}
     Enter password      ${password}
     Enter confirm password      ${confirm_password_input}
     Click the register button
